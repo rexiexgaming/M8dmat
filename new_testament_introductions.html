@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مقدمات أسفار العهد الجديد | من غلاطية إلى الرؤيا</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700;800;900&display=swap');
+:root{--navy:#101a2d;--navy2:#172640;--gold:#c9a45c;--gold2:#efd79c;--ink:#20283a;--muted:#687386;--paper:#fffdf8;--line:#e9dfca;--cream:#f6f0e4}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:#f1eee7;color:var(--ink);font-family:'Cairo',sans-serif;line-height:1.95}
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 15% 20%,#344663 0,transparent 34%),linear-gradient(135deg,#0b1424,#1a2a45 70%,#263753);color:#fff;padding:76px 22px 64px;text-align:center}
+.hero:before,.hero:after{content:"";position:absolute;border:1px solid rgba(239,215,156,.24);border-radius:50%;width:360px;height:360px;top:-220px;right:-110px}
+.hero:after{width:500px;height:500px;top:auto;right:auto;bottom:-390px;left:-140px}
+.eyebrow{color:var(--gold2);font-size:13px;letter-spacing:2px;font-weight:800}
+.hero h1{font-family:'Amiri',serif;font-size:clamp(34px,6vw,62px);line-height:1.35;margin:12px 0;color:#fff}
+.hero p{max-width:720px;margin:10px auto 0;color:#d5dbea;font-size:15px}
+.ornament{display:flex;align-items:center;justify-content:center;gap:12px;color:var(--gold2);margin:20px auto}
+.ornament:before,.ornament:after{content:"";height:1px;width:68px;background:linear-gradient(90deg,transparent,var(--gold))}
+.ornament:after{transform:scaleX(-1)}
+.wrap{max-width:1120px;margin:auto;padding:0 20px}
+.toolbar{position:sticky;top:0;z-index:10;background:rgba(255,253,248,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);box-shadow:0 5px 22px #1b2a4210}
+.toolbar-inner{max-width:1120px;margin:auto;padding:12px 20px;display:flex;gap:12px;align-items:center;justify-content:space-between}
+.search{flex:1;max-width:340px;border:1px solid var(--line);border-radius:999px;background:#fff;padding:9px 16px;font:inherit;outline:none}
+.search:focus{border-color:var(--gold)}
+.print{border:0;border-radius:999px;background:var(--navy);color:#fff;padding:10px 18px;font:700 13px 'Cairo';cursor:pointer}
+.index{margin:28px auto 34px;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px 24px;box-shadow:0 12px 35px #1b2a4208}
+.index h2{font-family:'Amiri',serif;margin:0 0 14px;color:var(--navy);font-size:25px}
+.index-links{display:flex;flex-wrap:wrap;gap:9px}
+.index a{color:var(--navy);text-decoration:none;background:var(--cream);border:1px solid #eadfc9;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:700;transition:.2s}
+.index a:hover{background:var(--navy);color:var(--gold2)}
+.book{background:var(--paper);border:1px solid var(--line);border-radius:20px;margin:26px auto;padding:0 30px 30px;box-shadow:0 14px 40px #1b2a4209;overflow:hidden}
+.book-head{margin:0 -30px 22px;padding:20px 30px;background:linear-gradient(100deg,#14223a,#243754);color:#fff;display:flex;align-items:center;gap:16px}
+.book-no{width:42px;height:42px;border:1px solid #d6b66e;border-radius:50%;display:grid;place-items:center;color:var(--gold2);font-family:'Amiri';font-size:20px;flex:none}
+.book-head h2{font-family:'Amiri',serif;font-size:30px;margin:0;color:#f4e5c1}
+.section{margin:22px 0}
+.section h3{font-size:18px;color:var(--navy);display:flex;align-items:center;gap:10px;margin:0 0 10px}
+.section h3:before{content:"";width:4px;height:22px;border-radius:4px;background:var(--gold)}
+.section-body{padding-right:14px}
+p{margin:8px 0}
+.bullet{position:relative;padding-right:20px;margin:8px 0}
+.bullet:before{content:"";position:absolute;right:0;top:13px;width:8px;height:8px;border-radius:50%;background:var(--gold)}
+.subhead{font-weight:800;color:#263b5a}
+.quote{margin:12px 0;padding:17px 22px;background:linear-gradient(120deg,#f7f0e2,#fffaf0);border-right:4px solid var(--gold);border-radius:12px;color:#4a3c24;font-family:'Amiri',serif;font-size:20px;line-height:1.9}
+table{width:100%;border-collapse:collapse;margin:12px 0 4px;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:14px}
+th{background:#1b2b46;color:#f4e5c1;font-weight:800;text-align:right}
+td,th{padding:11px 14px;border-bottom:1px solid #eee7da}
+tr:last-child td{border-bottom:0}
+tbody tr:nth-child(even){background:#faf7f0}
+.note{margin:28px 0 50px;padding:20px 24px;background:#fff9ec;border:1px solid #ead9b5;border-radius:16px;color:#5e4b2d}
+.note strong{color:#8b682a}
+.footer{text-align:center;color:#8790a0;font-size:12px;padding:25px}
+.hidden{display:none!important}
+@media(max-width:650px){.hero{padding:55px 18px}.toolbar-inner{padding:9px 14px}.search{max-width:none;min-width:0}.print{padding:9px 12px}.book{padding:0 17px 22px;border-radius:15px}.book-head{margin:0 -17px 18px;padding:16px 18px}.book-head h2{font-size:25px}.section-body{padding-right:4px}.quote{font-size:18px;padding:14px}.index{padding:18px}.index-links{gap:7px}table{font-size:12px}td,th{padding:8px 9px}}
+@media print{body{background:#fff;font-size:11pt}.hero{padding:28px;background:#14223a!important;print-color-adjust:exact;-webkit-print-color-adjust:exact}.toolbar,.index{display:none}.wrap{max-width:none;padding:0}.book{box-shadow:none;border:1px solid #ddd;break-inside:avoid;margin:12px 0;padding:0 18px 18px}.book-head{print-color-adjust:exact;-webkit-print-color-adjust:exact}.quote,th{print-color-adjust:exact;-webkit-print-color-adjust:exact}.footer{display:none}a{color:inherit}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="eyebrow">دراسة كتابية • العهد الجديد</div>
+  <h1>مقدمات أسفار العهد الجديد</h1>
+  <div class="ornament">✦</div>
+  <p>تجميع المقدمات من الرسالة إلى أهل غلاطية وحتى سفر رؤيا يوحنا اللاهوتي</p>
+</header>
+<div class="toolbar"><div class="toolbar-inner">
+  <input class="search" id="search" type="search" placeholder="ابحث داخل المقدمات...">
+  <button class="print" onclick="window.print()">طباعة / حفظ PDF</button>
+</div></div>
+<main class="wrap">
+<nav class="index" aria-label="فهرس الأسفار">
+<h2>فهرس الأسفار</h2>
+<div class="index-links">
+<a href="#gal">غلاطية</a><a href="#eph">أفسس</a><a href="#php">فيلبي</a><a href="#col">كولوسي</a><a href="#thess">تسالونيكي الأولى</a><a href="#heb">العبرانيين</a><a href="#pet">بطرس الأولى</a><a href="#jude">يهوذا</a><a href="#rev">الرؤيا</a><a href="#2thess">تسالونيكي الثانية</a><a href="#1tim">تيموثاوس الأولى</a><a href="#2tim">تيموثاوس الثانية</a><a href="#titus">تيطس</a><a href="#philem">فيلمون</a><a href="#james">يعقوب</a><a href="#2pet">بطرس الثانية</a><a href="#1john">يوحنا الأولى</a><a href="#2john">يوحنا الثانية</a><a href="#3john">يوحنا الثالثة</a>
+</div></nav>
+<section class="book" id="gal">
+<div class="book-head"><span class="book-no">١</span><h2>غلاطية</h2></div>
+<div class="section"><h3>كاتب السفر</h3><div class="section-body">
+<p class="bullet">بولس الرسول.</p><p class="bullet">يؤكد الرسول بولس في مقدمة الرسالة رسوليته وأنها جاءت بإعلان يسوع المسيح ودعوة الآب له.</p>
+</div></div>
+<div class="section"><h3>معلومات عامة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">موضوعات الرسالة ومحورها:</span> الناموس، الإيمان، الحرية المسيحية، والروح القدس، وربنا يسوع المسيح محررنا، والخدمة القانونية، والناموس والحياة الجديدة.</p>
+<p class="bullet">تؤكد الرسالة أن الإيمان بالمسيح كافٍ لتبرير الإنسان وخلاصه، وأن الختان غير لازم للخلاص.</p>
+</div></div>
+<div class="section"><h3>مفتاح السفر</h3><div class="quote">«وأما من جهتي فحاشا لي أن أفتخر إلا بصليب ربنا يسوع المسيح الذي به قد صلب العالم لي وأنا للعالم لأنه في المسيح يسوع ليس الختان ينفع شيئاً ولا الغرلة بل الخليقة الجديدة» (غل 6: 14-15).</div></div>
+<div class="section"><h3>أقسام السفر</h3><table><thead><tr><th>القسم</th><th>الأصحاحات</th></tr></thead><tbody>
+<tr><td>المقدمة وإعلان الرسول لرسوليته</td><td>1</td></tr><tr><td>مشكلة التهود والبر بالإيمان</td><td>2</td></tr><tr><td>الإيمان والناموس والوعد</td><td>3</td></tr><tr><td>الطفولة والنضوج الروحي (سارة وهاجر)</td><td>4</td></tr><tr><td>الحرية المسيحية وثمار الروح</td><td>5</td></tr><tr><td>وصايا عملية والافتخار بالصليب</td><td>6</td></tr>
+</tbody></table></div>
+<div class="section"><h3>خلفية الكتابة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">غلاطية:</span> ولاية تقع في القسم الأوسط من آسيا الصغرى خضعت للدولة الرومانية، وفي سنة 7 ق.م انضم إليها عدة مقاطعات تحت اسم "ولاية إنطاكية".</p>
+<p class="bullet"><span class="subhead">نشأة الكنيسة وزيارات الرسول:</span> زارها بولس الرسول في رحلته التبشيرية الأولى (أنطاكية بيسيدية ولسترة ودربة)، كما زارها مع سيلا وتيموثاوس وفي رحلته التبشيرية الثالثة.</p>
+<p class="bullet"><span class="subhead">زمان ومكان الكتابة:</span> كتبها بولس الرسول في أفسس إما في أعقاب رحلته التبشيرية الثانية (حوالي سنة 55 م) أو أثناء رحلته الثالثة (حوالي سنة 57 م).</p>
+<p class="bullet"><span class="subhead">مناسبة وغرض الكتابة:</span> جاء إلى غلاطية بعض الداعين إلى العودة للديانة اليهودية (المتهودين) وشككوا في رسولية القديس بولس وطالبوا المؤمنين بختان الجسد وحفظ الناموس حرفياً؛ فكتب الرسول ليدافع عن رسوليته وليوضح أن الإيمان بالصليب والدخول للحياة الجديدة لا يحتاج إلى العودة لحرفية أعمال الناموس.</p>
+</div></div></section>
+<section class="book" id="eph">
+<div class="book-head"><span class="book-no">٢</span><h2>أفسس</h2></div>
+<div class="section"><h3>كاتب السفر</h3><div class="section-body"><p class="bullet">بولس الرسول.</p></div></div>
+<div class="section"><h3>معلومات عامة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">موضوعات الرسالة ومحورها:</span> قصة الله، المسيح هو المركز، الكنيسة جسد المسيح السري ورأسها المسيح، عائلة جديدة، السلوك المسيحي الواجب من أعضاء الكنيسة.</p>
+<p class="bullet">تعتبر هذه الرسالة تاج رسائل بولس الرسول، وهي رسالة شكر وتشجيع وتخلو من الجدل الموجود في رسالة غلاطية.</p>
+</div></div>
+<div class="section"><h3>مفتاح السفر</h3><div class="quote">«وأخضع كل شيء تحت قدميه وإياه جعل رأسا فوق كل شيء للكنيسة التي هي جسده ملء الذي يملأ الكل في الكل» (أف 1: 22-23).</div></div>
+<div class="section"><h3>أقسام السفر</h3><table><thead><tr><th>القسم</th><th>الأصحاحات</th></tr></thead><tbody>
+<tr><td>سر التعارف على الله والبركة في المسيح</td><td>1</td></tr><tr><td>الخلاص بالنعمة والكنيسة بيت الله</td><td>2</td></tr><tr><td>سر المسيح والقوة الإلهية</td><td>3</td></tr><tr><td>وحدانية الجسد والنماء في المسيح</td><td>4</td></tr><tr><td>السلوك في النور والعلاقات الأسرية</td><td>5</td></tr><tr><td>العلاقات الاجتماعية وسلاح الله الكامل</td><td>6</td></tr>
+</tbody></table></div>
+<div class="section"><h3>خلفية الكتابة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">مدينة أفسس:</span> صارت تحت الحكم الروماني عام 133 ق.م وكانت عاصمة مقاطعة آسيا، والميناء الرئيسي والمركز التجاري، وكانت مركزاً دينياً بسبب هيكل أرطاميس العظيم.</p>
+<p class="bullet"><span class="subhead">نشأة الكنيسة:</span> أسس الرسول بولس الكنيسة هناك؛ زارها عام 54 م في رحلته التبشيرية الثانية لفترة قصيرة، وعاد إليها في رحلته الثالثة حيث بقى فيها أكثر من عامين (56 - 58 م) ونجحت الكرازة حتى حرق السحرة كتبهم وثارت الصياغ ضد الرسول. وقضى القديس يوحنا سنواته الأخيرة هناك وكتب سفر الرؤيا في جزيرة بطمس تجاه أفسس.</p>
+<p class="bullet"><span class="subhead">زمان ومكان الكتابة:</span> كتبت أثناء أسر بولس الرسول الأول في روما في السجن حوالي سنة 62 م.</p>
+<p class="bullet"><span class="subhead">مناسبة الكتابة:</span> أرسلت على يد تخيكس كرسالة شكر وتشجيع وكتابة دورية موجهة لعدة كنائس أهمها كنيسة أفسس لتوضيح مفهوم الكنيسة كجسد المسيح والسلوك المسيحي.</p>
+</div></div></section>
+<section class="book" id="php">
+<div class="book-head"><span class="book-no">٣</span><h2>فيلبي</h2></div>
+<div class="section"><h3>كاتب السفر</h3><div class="section-body"><p class="bullet">بولس الرسول.</p></div></div>
+<div class="section"><h3>معلومات عامة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">موضوعات الرسالة ومحورها:</span> الاتضاع، التضحية بالذات، الوحدة، الحياة المسيحية، الفرح، ووحدانية الروح.</p>
+<p class="bullet">هي رسالة فرح وحب وشكر ومدح، ولا تجد فيها انتقاداً أو توبيخاً.</p>
+</div></div>
+<div class="section"><h3>مفتاح السفر</h3><div class="quote">«لكنني وإن كنت انسكب أيضاً على ذبيحة إيمانكم وخدمته أسر وأفرح معكم أجمعين» (في 2: 17)، و«افرحوا في الرب كل حين وأقول أيضاً افرحوا» (في 4: 4).</div></div>
+<div class="section"><h3>أقسام السفر</h3><table><thead><tr><th>القسم</th><th>الأصحاحات</th></tr></thead><tbody>
+<tr><td>الشكر والشركة الرسولية</td><td>1: 1 - 11</td></tr><tr><td>الوحدانية والعمل الإنجيلي وسط الآلام</td><td>1: 12 - 30</td></tr><tr><td>الوحدانية والاتضاع (المسيح مثالنا)</td><td>2</td></tr><tr><td>تحذير من المعلمين الكذبة والربح في المسيح</td><td>3</td></tr><tr><td>وصايا عملية وشكر ختامي</td><td>4</td></tr>
+</tbody></table></div>
+<div class="section"><h3>خلفية الكتابة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">مدينة فيلبي:</span> مدينة في مقدونية باليونان، ضمها فيلبي المقدوني الثاني عام 356 ق.م ووسعها وحصنها، وسقطت تحت يد الرومان عام 168 ق.م وأصبحت مدينة كولونية لها امتيازات رومانية.</p>
+<p class="bullet"><span class="subhead">نشأة الكنيسة:</span> أسس الرسول بولس أول كنيسة في أوروبا في فيلبي نحو عام 52 م في رحلته التبشيرية الثانية ومعه سيلا ولوقا وتيموثاوس، وآمن ليدية والسجان بعد أن سُجن بولس وسيلا هناك.</p>
+<p class="bullet"><span class="subhead">زمان ومكان الكتابة:</span> كتبت نحو سنة 63 م من السجن في روما قرب نهاية أسره الأول.</p>
+<p class="bullet"><span class="subhead">مناسبة الكتابة:</span> أرسل الفيلبيون هبة مالية للرسول بولس وهو في السجن في روما مع أبفرودتس، وإذ مرض أبفرودتس ثم شفي، أرسله بولس بهذه الرسالة ليعبر عن شكره لمحبتاهم ولتعزيتهم وتأكيد وحدانية الروح والفرح.</p>
+</div></div></section>
+<section class="book" id="col">
+<div class="book-head"><span class="book-no">٤</span><h2>كولوسي</h2></div>
+<div class="section"><h3>كاتب السفر</h3><div class="section-body"><p class="bullet">بولس الرسول.</p></div></div>
+<div class="section"><h3>معلومات عامة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">موضوعات الرسالة ومحورها:</span> المسيح هو الله، المسيح رأس الكنيسة، الاتحاد بالمسيح، ودحض الفلسفات والبدع الغنوسية والتهود.</p>
+<p class="bullet">تعتبر رسالة كولوسي مكملة للرسالة إلى أهل أفسس؛ حيث تتحدث أفسس عن "الكنيسة جسد المسيح"، بينما تتحدث كولوسي عن "المسيح رأس الكنيسة".</p>
+</div></div>
+<div class="section"><h3>مفتاح السفر</h3><div class="quote">«فإن كنتم قد قمتم مع المسيح فاطلبوا ما فوق حيث المسيح جالس عن يمين الله» (كو 3: 1).</div></div>
+<div class="section"><h3>أقسام السفر</h3><table><thead><tr><th>القسم</th><th>الأصحاحات</th></tr></thead><tbody>
+<tr><td>المقدمة والشكر والصلاة</td><td>1: 1 - 11</td></tr><tr><td>القسم التعليمي: المسيح رأس الكنيسة والخالق</td><td>1: 12 - 29</td></tr><tr><td>الحذر من الهرطقات والفلسفات والتهود</td><td>2</td></tr><tr><td>الوصايا العملية والعلاقات الأسرية والاجتماعية</td><td>3: 1 - 4: 6</td></tr><tr><td>التحيات الختامية</td><td>4: 7 - 18</td></tr>
+</tbody></table></div>
+<div class="section"><h3>خلفية الكتابة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">مدينة كولوسي:</span> مدينة فريجية بآسيا الصغرى على نهر ليكوس، على بعد 12 ميلاً من لاودكية على الطريق التجاري القديم.</p>
+<p class="bullet"><span class="subhead">نشأة الكنيسة:</span> نشأت الكنيسة هناك على يد أبفراس تلميذ بولس الرسول، وخدم بها أراخبو وفليمون وأنسيمس.</p>
+<p class="bullet"><span class="subhead">زمان ومكان الكتابة:</span> كتبها بولس الرسول أثناء سجنه الأول في روما سنة 62 م، وأرسلت بيد تيخيكس مع أنسيموس.</p>
+<p class="bullet"><span class="subhead">مناسبة الكتابة:</span> زار أبفراس الرسولَ بولس في روما واستشاره بخصوص ظهور تعاليم فاسدة في كولوسي تجمع بين العودة للتهود والطقوس الحرفية وبين آراء غنوسية شرقية تعتمد على المعرفة العقلية وعبادة الملائكة؛ فكتب بولس يحفظ إيمانهم ويؤكد أن الخلاص الكامل في شخص المسيح وحده.</p>
+</div></div></section>
+<section class="book" id="thess">
+<div class="book-head"><span class="book-no">٥</span><h2>تسالونيكي الأولى</h2></div>
+<div class="section"><h3>كاتب السفر</h3><div class="section-body"><p class="bullet">بولس الرسول، وكتبها مع سلوانس وتيموثاوس.</p></div></div>
+<div class="section"><h3>معلومات عامة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">موضوعات الرسالة ومحورها:</span> الاضطهاد، خدمة الرسول بولس الأبوية، الرجاء، الاستعداد للمجيء الثاني وحياة السهر.</p>
+<p class="bullet">تعد هذه الرسالة من أوائل ما كتبه القديس بولس الرسول في رسائله.</p>
+</div></div>
+<div class="section"><h3>مفتاح السفر</h3><div class="quote">«إنجيلنا لم يصر لكم بالكلام فقط بل بالقوة أيضاً وبالروح القدس وبيقين شديد» (1تس 1: 5)، و«شجعوا صغار النفوس اسندوا الضعفاء تأنوا على الجميع» (1تس 5: 14).</div></div>
+<div class="section"><h3>أقسام السفر</h3><table><thead><tr><th>القسم</th><th>الأصحاحات</th></tr></thead><tbody>
+<tr><td>نجاح الكنيسة وشكر الله</td><td>1</td></tr><tr><td>أبوة الرسول لهم وتألم الكنيسة</td><td>2</td></tr><tr><td>إرسال تيموثاوس وتقاريره المفرحة</td><td>3</td></tr><tr><td>تثبيت المؤمنين والنمو في القداسة والمجيء الثاني</td><td>4</td></tr><tr><td>حياة السهر ووصايا عملية وختام</td><td>5</td></tr>
+</tbody></table></div>
+<div class="section"><h3>خلفية الكتابة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">مدينة تسالونيكي:</span> عاصمة مقاطعة مقدونية باليونان، وكانت مركزاً تجارياً هائلاً وموطناً لمجمع يهودي كبير.</p>
+<p class="bullet"><span class="subhead">نشأة الكنيسة وزمان الكتابة:</span> كتبها الرسول بولس من كورنثوس في نهاية عام 52 م أو بداية 53 م أثناء رحلته التبشيرية الثانية.</p>
+<p class="bullet"><span class="subhead">مناسبة الكتابة:</span> أرسل الرسول الرسالة ليعزي الكنيسة في ضيقتها المشتدة، ويوضح لهم الرجاء في الراقدين في المسيح، كما كتب بفيض من الأبوة ليرد على الذين اتهموه بعدم الاهتمام بهم عندما أرسل إليهم تلميذه تيموثاوس.</p>
+</div></div></section>
+<section class="book" id="heb">
+<div class="book-head"><span class="book-no">٦</span><h2>العبرانيين</h2></div>
+<div class="section"><h3>كاتب السفر</h3><div class="section-body"><p class="bullet">كُتبت الرسالة دون أن يذكر الرسول اسمه صراحة حتى لا ينفر المتعصبون من المسيحيين الذين من أصل يهودي الذين اعتبروه ثائراً على العوائد الموسوية. ولكن أجمع قادة الكنيسة الأولون (مثل كليمنضس الإسكندري) على أنها للقديس بولس الرسول كتبت بالعبرانية وترجمها لوقا إلى اليونانية.</p></div></div>
+<div class="section"><h3>معلومات عامة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">موضوعات الرسالة ومحورها:</span> سمو المسيح، عظمة كاهننا الأعظم، الذبيحة الكاملة، العهد الجديد إتمام للعهد القديم، النضج والإيمان والاحتمال.</p>
+<p class="bullet">تفتح الرسالة من غير عنوان وتختم بتحيات مختصرة.</p>
+</div></div>
+<div class="section"><h3>مفتاح السفر</h3><div class="quote">«فإذ لنا أيها الإخوة ثقة بالدخول إلى الأقداس بدم يسوع طريقاً كرسه لنا حديثاً حياً بالحجاب أي جسده وكاهن عظيم على بيت الله» (عب 10: 19-21).</div></div>
+<div class="section"><h3>أقسام السفر</h3><table><thead><tr><th>القسم</th><th>الأصحاحات</th></tr></thead><tbody>
+<tr><td>مقارنة المسيح بالأنبياء والملائكة وموسى وهرون</td><td>1 - 7</td></tr><tr><td>العهد الجديد والخدمة والذبيحة الكاملة</td><td>8 - 10</td></tr><tr><td>التطبيق العملي للإيمان وسحابة الشهود</td><td>11</td></tr><tr><td>الحث على الثبات والجهاد الروحي ووصايا ختامية</td><td>12 - 13</td></tr>
+</tbody></table></div>
+<div class="section"><h3>خلفية الكتابة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">المكتوب إليهم:</span> اليهود الذين آمنوا بالمسيح وتعرضوا لاضطهاد شديد وطرد من الهيكل وحرمان من الكهنوت اليهودي من قِبل العبرانيين غير المؤمنين.</p>
+<p class="bullet"><span class="subhead">زمان ومكان الكتابة:</span> كُتبت ما بين سنتي 62 - 64 ميلادية من إيطاليا.</p>
+<p class="bullet"><span class="subhead">غاية الرسالة:</span> الكشف عن عظمة السيد المسيح وخدمته السماوية مقارنة بالخدمة الموسوية، وتثبيت إيمان المؤمنين من أصل يهودي لمنعهم من الارتداد بسبب التجارب والاضطهاد.</p>
+</div></div></section>
+<section class="book" id="pet">
+<div class="book-head"><span class="book-no">٧</span><h2>بطرس الأولى</h2></div>
+<div class="section"><h3>كاتب السفر</h3><div class="section-body"><p class="bullet">بطرس الرسول (سمعان بن يونا، صياد السمك من بيت صيدا).</p></div></div>
+<div class="section"><h3>معلومات عامة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">موضوعات الرسالة ومحورها:</span> الخلاص والألم، الرجاء، السلوك في الجماعة والعائلة، والدينونة.</p>
+<p class="bullet">هي إحدى رسائل الكاثوليكون الموجهة للكنيسة الجامعة، وتمس الجانب العملي لإعلان الإيمان في كافة جوانب الحياة.</p>
+</div></div>
+<div class="section"><h3>مفتاح السفر</h3><div class="quote">«مبارك الله أب ربنا يسوع المسيح الذي حسب رحمته الكثيرة ولدنا ثانية لرجاء حي بقيامة يسوع المسيح من الأموات لميراث لا يفنى ولا يتدنس ولا يضمحل محفوظ في السماوات لأجلكم» (1بط 1: 3-4).</div></div>
+<div class="section"><h3>أقسام السفر</h3><table><thead><tr><th>القسم</th><th>الأصحاحات</th></tr></thead><tbody>
+<tr><td>الخلاص والآلام وعمل الثالوث</td><td>1</td></tr><tr><td>علاقتنا العملية في المسيح والسلوك في الجماعة</td><td>2</td></tr><tr><td>الحياة الأسرية وسلوكنا مع المضايقين</td><td>3</td></tr><tr><td>التألم بفكره المسيح والتسلح بالقداسة</td><td>4</td></tr><tr><td>السلوك الكنسي ونصائح للرعاة والرعية</td><td>5</td></tr>
+</tbody></table></div>
+<div class="section"><h3>خلفية الكتابة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">المكتوب إليهم:</span> المؤمنون المتغربون في شتات آسيا الصغرى (بنتس، غلاطية، كبدوكية، وآسيا).</p>
+<p class="bullet"><span class="subhead">زمان ومكان الكتابة:</span> كُتبت ما بين 63 - 67 م أثناء اضطهاد الإمبراطور نيرون من بابل (بابيلون بمصر القديمة أو روما).</p>
+<p class="bullet"><span class="subhead">غاية الرسالة:</span> تشديد إيمان المؤمنين وتعميق الرجاء فيهم وتشجيعهم على قبول الآلام واحتسابها شركة مع المسيح المصلوب منتظرين الميراث السماوي.</p>
+</div></div></section>
+<section class="book" id="jude">
+<div class="book-head"><span class="book-no">٨</span><h2>يهوذا</h2></div>
+<div class="section"><h3>كاتب السفر</h3><div class="section-body"><p class="bullet">يهوذا الرسول (المسمى أيضاً لباوس وتداوس، أخو يعقوب وابن خالة السيد المسيح).</p></div></div>
+<div class="section"><h3>معلومات عامة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">موضوعات الرسالة ومحورها:</span> التحذير من المعلمين الكذبة والارتداد، وحفظ الإيمان المُسلَّم مرة للقديسين.</p>
+<p class="bullet">تنتمي لرسائل الكاثوليكون وتركز على ثبات الكنيسة ومخافة الله.</p>
+</div></div>
+<div class="section"><h3>مفتاح السفر</h3><div class="quote">«وأما أنتم أيها الأحباء فابنوا أنفسكم على إيمانكم الأقدس مصلين في الروح القدس واحفظوا أنفسكم في محبة الله منتظرين رحمة ربنا يسوع المسيح للحياة الأبدية» (يه 20-21).</div></div>
+<div class="section"><h3>أقسام السفر</h3><table><thead><tr><th>القسم</th><th>الأعداد</th></tr></thead><tbody>
+<tr><td>البركة الرسولية والهدف</td><td>1 - 2</td></tr><tr><td>الجهاد لحفظ الإيمان المُسلَّم مرة للقديسين</td><td>3 - 4</td></tr><tr><td>أمثلة تاريخية لدينونة الأشرار وصفات المعلمين المزيفين</td><td>5 - 19</td></tr><tr><td>بناء النفس على الإيمان الأقدس والتمسك بالمحبة</td><td>20 - 23</td></tr><tr><td>تسبحة ختامية للرب الحافظ من العثرات</td><td>24 - 25</td></tr>
+</tbody></table></div>
+<div class="section"><h3>خلفية الكتابة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">المكتوب إليهم والزمان:</span> كُتبت عام 68 / 69 م قبل خراب أورشليم للمسيحيين بوجه عام في مصر وفلسطين.</p>
+<p class="bullet"><span class="subhead">غاية الرسالة:</span> تحريض المؤمنين على الثبات في الإيمان ومواجهة معلمين مزيفين يتسمون بإفساد الإيمان، وإنكار الآب والابن، والافتراء، والفسق، والبحث عن النفع المادي.</p>
+</div></div></section>
+<section class="book" id="rev">
+<div class="book-head"><span class="book-no">٩</span><h2>سفر رؤيا يوحنا اللاهوتي</h2></div>
+<div class="section"><h3>كاتب السفر</h3><div class="section-body"><p class="bullet">يوحنا الرسول ابن زبدي (كاتب الإنجيل الرابع والرسائل الثلاث) عندما نُفي إلى جزيرة بطمس.</p></div></div>
+<div class="section"><h3>معلومات عامة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">موضوعات السفر ومحوره:</span> إعلان يسوع المسيح، سيادة الله، مجيء المسيح الثاني، شعب الله الأمين، نصرة الكنيسة والرجاء الأبدي.</p>
+<p class="bullet">هو السفر النبوي الوحيد في العهد الجديد، واستخدم الأسلوب الشفري والرمزي والأرقام الشفرية لإعلان الحقائق السماوية وتعزية الكنيسة المضطهدة.</p>
+</div></div>
+<div class="section"><h3>مفتاح السفر</h3><div class="quote">«وهم غلبوه بدم الخروف وبكلمة شهادتهم ولم يحبوا حياتهم حتى الموت» (رؤ 12: 11).</div></div>
+<div class="section"><h3>أقسام السفر</h3><p>ينقسم السفر إلى 7 رؤى رئيسية:</p>
+<table><thead><tr><th>الرؤيا</th><th>الأصحاحات</th></tr></thead><tbody>
+<tr><td>الرؤيا الأولى: الكنيسة على الأرض والرسائل للكنائس السبع</td><td>1 - 3</td></tr><tr><td>الرؤيا الثانية: العرش والأختام السبعة</td><td>4 - 7</td></tr><tr><td>الرؤيا الثالثة: الأبواق السبعة</td><td>8 - 11</td></tr><tr><td>الرؤيا الرابعة: المرأة والتنين والصراع</td><td>12 - 14</td></tr><tr><td>الرؤيا الخامسة: الجامات السبعة</td><td>15 - 16</td></tr><tr><td>الرؤيا السادسة: سقوط بابل ودينونة الشر</td><td>17 - 20</td></tr><tr><td>الرؤيا السابعة: الكنيسة في السماء أورشليم السماوية</td><td>21 - 22</td></tr>
+</tbody></table></div>
+<div class="section"><h3>خلفية الكتابة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">مكان وزمان الكتابة:</span> كُتب في جزيرة بطمس (Patino) نحو سنة 95 - 96 م في نهاية حكم الإمبراطور دوميتيان الذي نفى يوحنا إليها.</p>
+<p class="bullet"><span class="subhead">غرض الكتابة:</span> إعلان يسوع المسيح لعبيده، وإعداد الكنيسة لمجيء الرب الثاني وتثبيتها وسط الضيقات والحروب الشديدة، وتأكيد أن أبواب الجحيم لن تقوى على الكنيسة وأن النصرة النهائية للمؤمنين.</p>
+</div></div></section>
+<section class="book" id="2thess"><div class="book-head"><span class="book-no">١٠</span><h2>تسالونيكي الثانية</h2></div>
+<div class="section"><h3>كاتب السفر</h3><div class="section-body">
+<p class="bullet">بولس الرسول، وكتبها معه سلوانس وتيموثاوس.</p>
+</div></div><div class="section"><h3>معلومات عامة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">موضوعات الرسالة ومحورها:</span> نظرة على إنسان الخطية الذي يسبق المجيء، ربنا يسوع المسيح هو أبديتنا ومجدنا، الاضطهاد، مجيء المسيح، الارتداد العظيم، والمثابرة.</p>
+<p class="bullet">كُتبت لتصحيح المفهوم الخاطئ حول قرب المجيء الثاني الفوري وإزالة ما ترتب عليه من إهمال للعمل وأمور المعيشة.</p>
+</div></div>
+<div class="section"><h3>مفتاح السفر</h3><div class="quote">«لأنه لا يأتي إن لم يأت الارتداد أولًا ويستعلن إنسان الخطية ابن الهلاك المقاوم والمرتفع على كل ما يدعى إلهًا أو معبودًا حتى أنه يجلس في هيكل الله كإله مظهرًا نفسه أنه إله» (2 تس 2: 3-4).</div></div>
+<div class="section"><h3>أقسام السفر</h3><table><thead><tr><th>القسم</th><th>الأصحاحات</th></tr></thead><tbody>
+<tr><td>الجانب الأفخارستي: الشكر، الافتخار بهم والدينونة العادلة والصلاة</td><td>1</td></tr>
+<tr><td>الجانب الرؤيوي: إنسان الخطية والارتداد المسبق</td><td>2</td></tr>
+<tr><td>الجانب العملي: تجنب السلوك بلا ترتيب، طلب الصلوات، والجهاد</td><td>3</td></tr>
+</tbody></table></div><div class="section"><h3>خلفية الكتابة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">مدينة تسالونيكي:</span> عاصمة مقاطعة مقدونية باليونان، مركز تجاري هام.</p>
+<p class="bullet"><span class="subhead">نشأة الكنيسة وزمان الكتابة:</span> أسسها بولس في رحلته التبشيرية الثانية (حوالي 52 م)، وكتب هذه الرسالة من كورنثوس بعد الرسالة الأولى بفترة وجيزة في نفس العام.</p>
+<p class="bullet"><span class="subhead">مناسبة الكتابة:</span> أرسلها لتصحيح الفهم الخاطئ الذي ساد عقب الرسالة الأولى ظناً أن يوم الرب قد حضر فوراً (ربما بسبب رسالة مزورة نُسبت إليه)، ولإيقاف حالة الارتباك وترك الأعمال، وتشجيعهم على الصبر وسط الاضطهاد المستمر.</p>
+</div></div></section>
+<section class="book" id="1tim"><div class="book-head"><span class="book-no">١١</span><h2>تيموثاوس الأولى</h2></div>
+<div class="section"><h3>كاتب السفر</h3><div class="section-body">
+<p class="bullet">بولس الرسول.</p>
+</div></div><div class="section"><h3>معلومات عامة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">موضوعات الرسالة ومحورها:</span> التعليم الصحيح، العبادة العامة، قيادة الكنيسة، الانضباط الشخصي، اهتمامات الكنيسة، وسلوك الخادم.</p>
+<p class="bullet">هي أولى الرسائل الرعوية التي تقدم مصدراً غنياً للاهوت الرعوي وتنظيم الكنيسة.</p>
+</div></div>
+<div class="section"><h3>مفتاح السفر</h3><div class="quote">«وأما غاية الوصية فهي المحبة من قلب طاهر وضمير صالح وإيمان بلا رياء» (1 تي 1: 5)، و«لا يستهن أحد بحداثتك كن قدوة للمؤمنين في الكلام في التصرف في الروح في الإيمان» (1 تي 4: 12).</div></div>
+<div class="section"><h3>أقسام السفر</h3><table><thead><tr><th>القسم</th><th>الأصحاحات</th></tr></thead><tbody>
+<tr><td>غاية الوصية والالتزام بالخدمة والجهاد</td><td>1</td></tr>
+<tr><td>العبادة العامة وإرشادات الصلاة للرجال والنساء</td><td>2</td></tr>
+<tr><td>سمات الرعاة والخدام (الأسقف والشماس) والنظرة للكنيسة</td><td>3</td></tr>
+<tr><td>التمسك بالتعليم الصحيح والقدوة في الخدمة</td><td>4</td></tr>
+<tr><td>العلاقات الكنسية والاجتماعية (الأرامل، الكهنة، والسلوك)</td><td>5 - 6</td></tr>
+</tbody></table></div><div class="section"><h3>خلفية الكتابة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">المكتوب إليه:</span> القديس تيموثاوس (معنى اسمه: عابد الله)، إبن أمه أفنيكي وجدته لوئيس، وآمن في لسترة ورافق بولس برابطة أبوية عميقة وأقامه أسقفاً على أفسس.</p>
+<p class="bullet"><span class="subhead">زمان ومكان الكتابة:</span> كُتبت من مقدونية حوالي سنة 64 - 65 م بعد خروج الرسول من سجنه الأول في روما.</p>
+<p class="bullet"><span class="subhead">مناسبة الكتابة:</span> تقديم نصائح رعوية لتلميذه تيموثاوس لمواجهة الصعوبات، وتوضيح سمات الرعاة والخدام، وتنظيم أمور العبادة وسيامة الأساقفة والشمامسة والحفاظ على الإيمان من المضلين.</p>
+</div></div></section>
+<section class="book" id="2tim"><div class="book-head"><span class="book-no">١٢</span><h2>تيموثاوس الثانية</h2></div>
+<div class="section"><h3>كاتب السفر</h3><div class="section-body">
+<p class="bullet">بولس الرسول.</p>
+</div></div><div class="section"><h3>معلومات عامة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">موضوعات الرسالة ومحورها:</span> المجاهرة بالإيمان، الأمانة، الكرازة والتعليم، انحراف التعليم، وعدم الخجل بشهادة ربنا يسوع.</p>
+<p class="bullet">تعد الرسالة الوداعية للقديس بولس وهو في قيود السجن ينتظر استشهاده.</p>
+</div></div>
+<div class="section"><h3>مفتاح السفر</h3><div class="quote">«لأن الله لم يعطنا روح الفشل بل روح القوة والمحبة والنصح» (2 تي 1: 7)، و«قد جاهدت الجهاد الحسن أكملت السعي حفظت الإيمان وأخيرا قد وضع لي إكليل البر» (2 تي 4: 7-8).</div></div>
+<div class="section"><h3>أقسام السفر</h3><table><thead><tr><th>القسم</th><th>الأصحاحات</th></tr></thead><tbody>
+<tr><td>البركة الأبوية وروح القوة غير المتأسفة</td><td>1</td></tr>
+<tr><td>الجهاد في الخدمة والجندية الروحية والتلمذة</td><td>2</td></tr>
+<tr><td>مقاومة الضلال والتمسك بالكتب المقدسة المسلمة من الطفولة</td><td>3</td></tr>
+<tr><td>وصايا عملية وداعية وتوقع الرحيل والافتخار بحفظ الإيمان</td><td>4</td></tr>
+</tbody></table></div><div class="section"><h3>خلفية الكتابة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">زمان ومكان الكتابة:</span> كُتبت من سجن روما الثاني تحت حكم الإمبراطور نيرون حوالي سنة 67 - 68 م قبل استشهاده مباشرة.</p>
+<p class="bullet"><span class="subhead">مناسبة الكتابة:</span> أرسلها ليدعو تلميذه تيموثاوس ومعه مرقس للحضور إليه سريعاً قبل رحيله، وليقدم نصائحه الأخيرة ليتسلح الخدام بروح القوة والمثابرة وألا يخجلوا بسلاسل بولس أو بالمسيح المصلوب وسط الاضطهاد.</p>
+</div></div></section>
+<section class="book" id="titus"><div class="book-head"><span class="book-no">١٣</span><h2>تيطس</h2></div>
+<div class="section"><h3>كاتب السفر</h3><div class="section-body">
+<p class="bullet">بولس الرسول.</p>
+</div></div><div class="section"><h3>معلومات عامة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">موضوعات الرسالة ومحورها:</span> الحياة الصالحة، الأخلاق، العلاقات الكنسية، المواطنة، والعمل الكنسي.</p>
+<p class="bullet">هي إحدى الرسائل الرعوية الموجهة إلى القديس تيطس لتنظيم الخدمة ورعايتها.</p>
+</div></div>
+<div class="section"><h3>مفتاح السفر</h3><div class="quote">«مقدمًا نفسك في كل شيء قدوة للأعمال الحسنة ومقدمًا في التعليم نقاوة ووقارًا وإخلاصًا» (تي 2: 7).</div></div>
+<div class="section"><h3>أقسام السفر</h3><table><thead><tr><th>القسم</th><th>الأصحاحات</th></tr></thead><tbody>
+<tr><td>التنظيم الكنسي وسيامة الشيوخ وشروط الأسقف</td><td>1</td></tr>
+<tr><td>التعليم المستقيم والسلوك المناسب لكل فئة وعمل النعمة</td><td>2</td></tr>
+<tr><td>الخضوع للرياسات والمواطنة الصالحة وتجنب الهراطقة</td><td>3</td></tr>
+</tbody></table></div><div class="section"><h3>خلفية الكتابة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">القديس تيطس:</span> أممي من أنطاكية الشام، آمن على يد بولس وحضر معه مجمع أورشليم، وتركه الرسول بولس في جزيرة كريت لتكملة ترتيب الكنائس.</p>
+<p class="bullet"><span class="subhead">زمان ومكان الكتابة:</span> كُتبت من مقدونية حوالي سنة 63 - 64 م بعد إطلاق سراح بولس من سجنه الأول.</p>
+<p class="bullet"><span class="subhead">مناسبة الكتابة:</span> اتسم أهل جزيرة كريت بالفساد والشر وظهور معلمين مضلين يطالبون بالتهود؛ فأرسل الرسول لتيطس ليحثه على إقامة قسوس أمناء، والتمسك بالتعليم الصحيح، وحث الشعب على الأعمال الحسنة والطهارة والمواطنة الصالحة.</p>
+</div></div></section>
+<section class="book" id="philem"><div class="book-head"><span class="book-no">١٤</span><h2>فيلمون</h2></div>
+<div class="section"><h3>كاتب السفر</h3><div class="section-body">
+<p class="bullet">بولس الرسول (يكتب كـ «أسير يسوع المسيح»).</p>
+</div></div><div class="section"><h3>معلومات عامة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">موضوعات الرسالة ومحورها:</span> الغفران، إزالة الحواجز، الاحترام، المسيحية العملية، والاستفادة من الطاقات.</p>
+<p class="bullet">رسالة شخصية فريدة تُبرز عمق الأبوة الروحية والحكمة الكنسية في معالجة قضية عبد سارق وهارب.</p>
+</div></div>
+<div class="section"><h3>مفتاح السفر</h3><div class="quote">«لكي تكون شركة إيمانك فعالة في معرفة كل الصلاح» (فل 6)، و«فَاقْبَلْهُ، الَّذِي هُوَ أَحْشَائِي» (فل 12).</div></div>
+<div class="section"><h3>أقسام السفر</h3><table><thead><tr><th>القسم</th><th>الأعداد</th></tr></thead><tbody>
+<tr><td>البركة الرسولية والثناء على محبة وإيمان فليمون</td><td>1 – 7</td></tr>
+<tr><td>الشفاعة والرجاء من أجل قبول أنسيمس كأخ لا كعبد</td><td>8 – 21</td></tr>
+<tr><td>الخاتمة، إعداد منزل للرسول، والبركة الختامية</td><td>22 – 25</td></tr>
+</tbody></table></div><div class="section"><h3>خلفية الكتابة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">أطراف الرسالة:</span> فليمون تاجر غني ومؤمن من أشراف كولوسي، وأنسيمس (معنى اسمه: نافع) عبده الذي سرق مالاً وهرب إلى روما، وهناك تقابل مع بولس في سجنه وآمن.</p>
+<p class="bullet"><span class="subhead">زمان ومكان الكتابة:</span> كُتبت من السجن الأول في روما سنة 62 - 63 م.</p>
+<p class="bullet"><span class="subhead">مناسبة الكتابة:</span> ردّ بولس الرسول العبد أنسيمس إلى سيده فليمون محملاً بهذه الرسالة تشفعاً فيه، طالباً الصفح عنه واختيارياً قبوله لا كعبد بل كأخ حبيب في المسيح، مع تعهد بولس بدفع وتديد ما سلب.</p>
+</div></div></section>
+<section class="book" id="james"><div class="book-head"><span class="book-no">١٥</span><h2>يعقوب</h2></div>
+<div class="section"><h3>كاتب السفر</h3><div class="section-body">
+<p class="bullet">يعقوب الرسول (يعقوب أخو الرب، أسقف كنيسة أورشليم ورئيسها).</p>
+</div></div><div class="section"><h3>معلومات عامة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">موضوعات الرسالة ومحورها:</span> الإيمان الحي، التجارب، ناموس المحبة، كلام الحكمة، الغنى والأعمال الصالحة.</p>
+<p class="bullet">هي أولى رسائل الكاثوليكون الموجهة للكنيسة الجامعة، وتركز على قداسة الحياة المسيحية العملية.</p>
+</div></div>
+<div class="section"><h3>مفتاح السفر</h3><div class="quote">«لأننا في أشياء كثيرة نعثر جميعنا» (يع 3: 2)، و«من رد خاطئًا عن ضلال طريقه يخلص نفسًا من الموت ويستر كثرة من الخطايا» (يع 5: 20).</div></div>
+<div class="section"><h3>أقسام السفر</h3><table><thead><tr><th>القسم</th><th>الأصحاحات</th></tr></thead><tbody>
+<tr><td>الإيمان والتجارب الخارجية والداخلية واقتناء الحكمة</td><td>1</td></tr>
+<tr><td>الإيمان وعدم المحاباة والاهتمام بالفقراء والإيمان الحي بالأعمال</td><td>2</td></tr>
+<tr><td>الإيمان وضبط خطايا اللسان والحكمة السماوية</td><td>3</td></tr>
+<tr><td>الإيمان ومقاومة شهوات العالم والتواضع</td><td>4</td></tr>
+<tr><td>الصبر في الآلام، تحذير الأغنياء، والصلاة لشفاء المرضى</td><td>5</td></tr>
+</tbody></table></div><div class="section"><h3>خلفية الكتابة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">المكتوب إليهم:</span> المؤمنون من أصل يهودي المتشتتون في العالم تحت الضيقة والاضطهاد.</p>
+<p class="bullet"><span class="subhead">زمان الكتابة:</span> كُتبت حوالي سنة 60 م قبل خراب أورشليم وتشتيت اليهود سنة 70 م.</p>
+<p class="bullet"><span class="subhead">غاية الرسالة:</span> تشجيع وتثبيت المؤمنين في التجارب، والتركيد على أن الإيمان الحقيقي يجب أن يترجم إلى أعمال صالحة ورحمة بالفقراء وضبط للسان وممارسة للقداسة.</p>
+</div></div></section>
+<section class="book" id="2pet"><div class="book-head"><span class="book-no">١٦</span><h2>بطرس الثانية</h2></div>
+<div class="section"><h3>كاتب السفر</h3><div class="section-body">
+<p class="bullet">بطرس الرسول.</p>
+</div></div><div class="section"><h3>معلومات عامة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">موضوعات الرسالة ومحورها:</span> الاجتهاد، المعلمون الكذبة، مجيء المسيح الثاني، الرجاء، والنمو في النعمة.</p>
+<p class="bullet">تمثل الوصية الوداعية للرسول بطرس لأولاده للتسلح بالنور والحق ضد البدع.</p>
+</div></div>
+<div class="section"><h3>مفتاح السفر</h3><div class="quote">«ولكننا بحسب وعده ننتظر سموات جديدة وأرضا جديدة يسكن فيها البر» (2 بط 3: 13).</div></div>
+<div class="section"><h3>أقسام السفر</h3><table><thead><tr><th>القسم</th><th>الأصحاحات</th></tr></thead><tbody>
+<tr><td>عمل الله والجهاد في الملكوت وشهادة التجلي والأنبياء</td><td>1</td></tr>
+<tr><td>كشف وتحذير من المعلمين الكذبة والبدع الفاسدة ودينونتهم</td><td>2</td></tr>
+<tr><td>حقيقة مجيء المسيح الثاني والسهر والقداسة والنمو في النعمة</td><td>3</td></tr>
+</tbody></table></div><div class="section"><h3>خلفية الكتابة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">زمان ومكان الكتابة:</span> كُتبت من روما قبل استشهاده مباشرة سنة 68 م.</p>
+<p class="bullet"><span class="subhead">مناسبة الكتابة:</span> أرسل رسالته الوداعية ليحذر المؤمنين من المعلمين المزيفين الذين ينكرون مجيء المسيح الثاني لكي يبيحوا للناس شهوات الجسد، مؤكداً لهم حقيقة المجيء والرجاء الأبدي، داعياً إياهم للثبات والنمو في المعرفة القدسية.</p>
+</div></div></section>
+<section class="book" id="1john"><div class="book-head"><span class="book-no">١٧</span><h2>يوحنا الأولى</h2></div>
+<div class="section"><h3>كاتب السفر</h3><div class="section-body">
+<p class="bullet">يوحنا الرسول الحبيب.</p>
+</div></div><div class="section"><h3>معلومات عامة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">موضوعات الرسالة ومحورها:</span> الخطية، المحبة الأخوية، عائلة الله، الحق والخطأ، اليقين، وأن «الله محبة».</p>
+<p class="bullet">تركز على المعرفة الإيمانية الحقيقية والشركة في النور.</p>
+</div></div>
+<div class="section"><h3>مفتاح السفر</h3><div class="quote">«بهذا قد عرفنا أن ذاك وضع نفسه لأجلنا فنحن ينبغي لنا أن نضع نفوسنا لأجل الإخوة» (1 يو 3: 16).</div></div>
+<div class="section"><h3>أقسام السفر</h3><table><thead><tr><th>القسم</th><th>الأصحاحات</th></tr></thead><tbody>
+<tr><td>التجسد الإلهي حقيقة ملموسة، غاية التجسد والنور والشركة</td><td>1</td></tr>
+<tr><td>النور والمحبة، طاعة الوصايا، ورفض محبة العالم والانشقاقات</td><td>2</td></tr>
+<tr><td>محبة الله لنا كأبناء والمحبة الأخوية العملية</td><td>3</td></tr>
+<tr><td>اختبار الأرواح وإعلان أن الله محبة</td><td>4</td></tr>
+<tr><td>الإيمان والنصرة والعاطية الأبدية واستجابة الصلاة</td><td>5</td></tr>
+</tbody></table></div><div class="section"><h3>خلفية الكتابة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">مكان وزمان الكتابة:</span> كُتبت من أفسس في أواخر القرن الأول (بين 96 - 100 م).</p>
+<p class="bullet"><span class="subhead">مناسبة الكتابة:</span> كتب للرد على المبتدعين الغنوسيين الذين أدعوا المعرفة النظرية وأنكروا حقيقة تجسد المسيح في الجسد؛ فأكد الرسول يوحنا حقيقة التجسد الذي لمسه ورآه، داعياً إلى ترجمة الإيمان إلى حب عملي ونور في السلوك.</p>
+</div></div></section>
+<section class="book" id="2john"><div class="book-head"><span class="book-no">١٨</span><h2>يوحنا الثانية</h2></div>
+<div class="section"><h3>كاتب السفر</h3><div class="section-body">
+<p class="bullet">يوحنا الرسول الحبيب (يُعرف بـ «الشيخ»).</p>
+</div></div><div class="section"><h3>معلومات عامة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">موضوعات الرسالة ومحورها:</span> الحق، المحبة، والتحذير من المعلمين المضلين.</p>
+<p class="bullet">تعتبر السفر الوحيد في الكتاب المقدس الموجه إلى سيدة فاضلة («كيرية المختارة وأولادها»، أو رمزيًا لكنيسة معينة).</p>
+</div></div>
+<div class="section"><h3>مفتاح السفر</h3><div class="quote">«هذه هي المحبة أن نسلك بحسب وصاياه» (2 يو 6)، و«كل من تعدى ولم يثبت في تعليم المسيح فليس له الله ومن يثبت في تعليم المسيح فهذا له الآب والابن جميعًا» (2 يو 9).</div></div>
+<div class="section"><h3>أقسام السفر</h3><table><thead><tr><th>القسم</th><th>الأعداد</th></tr></thead><tbody>
+<tr><td>الافتتاحية والارتباط بين الحق والمحبة</td><td>1 – 3</td></tr>
+<tr><td>السلوك في الحق وممارسة وصية المحبة</td><td>4 – 6</td></tr>
+<tr><td>التحذير من المضلين الذين ينكرون تجسد المسيح وعدم قبولهم</td><td>7 – 11</td></tr>
+<tr><td>الختام والتطلع للقاء الشفاهي والتلمذة المباشرة</td><td>12 – 13</td></tr>
+</tbody></table></div><div class="section"><h3>خلفية الكتابة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">مكان وزمان الكتابة:</span> كُتبت من أفسس في أواخر القرن الأول.</p>
+<p class="bullet"><span class="subhead">مناسبة الكتابة:</span> أرسلها ليحذر السيدة أولادها من قبول المعلمين المضلين الذين ينكرون مجيء يسوع المسيح في الجسد، مؤكداً أن المحبة الحقيقية لا تتجزأ عن التمسك بالحق والوصية.</p>
+</div></div></section>
+<section class="book" id="3john"><div class="book-head"><span class="book-no">١٩</span><h2>يوحنا الثالثة</h2></div>
+<div class="section"><h3>كاتب السفر</h3><div class="section-body">
+<p class="bullet">يوحنا الرسول الحبيب («الشيخ»).</p>
+</div></div><div class="section"><h3>معلومات عامة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">موضوعات الرسالة ومحورها:</span> السلوك في الحق، استضافة الغرباء والخدام المكرزين، التمييز بين القدوة الصالحة والشريرة.</p>
+<p class="bullet">كُتبت إلى شخص مؤمن ومحب يُدعى «غايوس المحبوب».</p>
+</div></div>
+<div class="section"><h3>مفتاح السفر</h3><div class="quote">«أيها المحبوب لا تتشبه بالشر بل بالخير، لأن من يصنع الخير هو من الله، ومن يصنع الشر فلم يبصر الله» (3 يو 11).</div></div>
+<div class="section"><h3>أقسام السفر</h3><table><thead><tr><th>القسم</th><th>الأعداد</th></tr></thead><tbody>
+<tr><td>التحية والدعاء لغايوس بالصحة والنمو الروحي</td><td>1 – 4</td></tr>
+<tr><td>الإشادة بإيمان غايوس واستضافته الأمينة للغرباء والخدام</td><td>5 – 8</td></tr>
+<tr><td>توبيخ ديوتريفس المحب للرئاسة، والإشادة بديمتريوس المشهود له</td><td>9 – 12</td></tr>
+<tr><td>الخاتمة وتبادل التحيات والسلام</td><td>13 – 14</td></tr>
+</tbody></table></div><div class="section"><h3>خلفية الكتابة</h3><div class="section-body">
+<p class="bullet"><span class="subhead">مكان وزمان الكتابة:</span> كُتبت من أفسس في أواخر القرن الأول.</p>
+<p class="bullet"><span class="subhead">مناسبة الكتابة:</span> أرسلها لغايوس ليشكره ويشجعه على عمل الخير واستضافة المكرزين الغرباء، وفي المقابل حذره من تصرفات ديوتريفس الذي يتكبر ويحب السلطة ويرفض الرسل ويمتنع عن الاستضافة.</p>
+</div></div></section>
+</main>
+<footer class="footer">مقدمات أسفار العهد الجديد • من غلاطية إلى الرؤيا</footer>
+<script>
+const search=document.getElementById('search');
+search.addEventListener('input',()=>{
+ const q=search.value.trim().toLocaleLowerCase('ar');
+ document.querySelectorAll('.book').forEach(book=>{
+   book.classList.toggle('hidden',q && !book.innerText.toLocaleLowerCase('ar').includes(q));
+ });
+});
+</script>
+</body></html>
